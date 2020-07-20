@@ -3,15 +3,6 @@ package com.practice6.stack;
 //use ListNode to implement stack (push, pop, peek)
 public class StackByLinkedList {
   
-  public static void main(String[] args) {
-    StackByLinkedList test = new StackByLinkedList();
-    test.push(1);
-    test.push(2);
-    test.push(3);
-    test.pop();
-    test.pop();
-  }
-  
   class ListNode {
     int value;
     ListNode next;
@@ -44,5 +35,15 @@ public class StackByLinkedList {
     }
     return head.value;
   }
+  
+  public static void main(String[] args) {
+    StackByLinkedList test = new StackByLinkedList();
+    test.push(1);
+    test.push(2);
+    test.push(3);
+    test.pop();
+    test.pop();
+  }
+  
 }
 

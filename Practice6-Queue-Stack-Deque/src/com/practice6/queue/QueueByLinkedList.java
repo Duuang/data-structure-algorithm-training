@@ -1,7 +1,5 @@
 package com.practice6.queue;
 
-import com.practice6.stack.StackByLinkedList;
-
 public class QueueByLinkedList {
   
   class ListNode {
@@ -16,7 +14,7 @@ public class QueueByLinkedList {
   private ListNode tail;
   
   // add at tail
-  public void add(int value) {
+  public void offer(int value) {
     if (head == null) {
       head = tail = new ListNode(value);
     } else {
@@ -26,7 +24,7 @@ public class QueueByLinkedList {
   }
   
   //remove at head
-  public Integer remove() {
+  public Integer poll() {
     if (head == null) {
       return null;
     }
@@ -52,5 +50,6 @@ public class QueueByLinkedList {
     test.add(3);
     test.remove();
     test.remove();
+    
   }
 }
